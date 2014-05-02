@@ -1,0 +1,31 @@
+root {
+    font: verdana, sans-serif;
+    font-size: 16pt;
+}
+
+h1 {
+   font-size: 32pt; 
+}
+.mouseover {
+    text-decoration: underline;
+    cursor: help;
+}
+.subhead {
+    font-size: 24pt;
+}
+div.divider {
+    width: 2.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+div.content {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+div.pdump {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
