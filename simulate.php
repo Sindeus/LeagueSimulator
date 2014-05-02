@@ -325,7 +325,7 @@ class Game {
         $this->results->bRatingMod = array_sum($this->bTeamRatings);
         $this->results->pRatingMod = array_sum($this->pTeamRatings);
         
-        $netRatingDiff = $this->results->bRating - $this->results->pRating;
+        $netRatingDiff = $this->results->bRatingMod - $this->results->pRatingMod;
         $netSkillDiff = $this->results->bSkill - $this->results->pSkill;
         $netMMRDiff = $this->results->bMMR -$this->results->pMMR; 
         $this->results->nRating = $netRatingDiff;
@@ -335,7 +335,7 @@ class Game {
         $this->results->aSkill = ($this->results->bSkill + $this->results->pSkill) / 10;
         
         if(self::$biasBlueTeam) {
-            $outcomeRating = 55.7 * $this->results->bRating - 44.3 * $this->results->pRating;
+            $outcomeRating = 55.7 * $this->results->bRatingMod - 44.3 * $this->results->pRatingMod;
         }
         else {
             $outcomeRating = $netRatingDiff;
