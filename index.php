@@ -22,6 +22,9 @@ Developed by Sindeus @ NA.
 
     <body>
         <h1>League Matchmaking Sim</h1>
+        <p>
+            Interested in checking out the code or contributing?  The git is available <a href="https://github.com/Sindeus/LeagueSimulator">here</a>.
+        </p>
         <form name="form" action="results.php" method="GET" enctype="multipart/form-data">
             <div class="content">
                 <span class="subhead">Global Properties</span>
